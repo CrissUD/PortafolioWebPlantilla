@@ -17,7 +17,7 @@ Dentro del curso se implementan varias características tanto en HTML como en CS
 
 # Resultado
 
-A continuación se muestra el resultado de la plantilla del portafolio, si quiere ver la pagina por usted mismo puede entrar al siguiente [link]().
+A continuación se muestra el resultado de la plantilla del portafolio, si quiere ver la pagina por usted mismo puede entrar al siguiente [link](https://crissud.github.io/PortafolioWebPlantilla/portafolio_web/index.html).
 
 <div align='center'>
     <img  src='https://i.imgur.com/aXeSSmR.png'>
