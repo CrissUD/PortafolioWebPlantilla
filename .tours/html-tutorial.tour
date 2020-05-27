@@ -1,0 +1,15 @@
+{
+  "title": "HTML Tutorial",
+  "steps": [
+    {
+      "file": "portafolio_web\\index.html",
+      "line": 6,
+      "description": "# Icono de pestaña\r\n\r\nTambien conocido como un **favicon** es el icono que tiene nuestra pagina web en la pestaña del navegador. Para poner esto necesitamos de una etiqueta **link** y esta debe tener los siguientes atributos:\r\n* **rel:** El tipo de relación del link y en este caso sera **icon**\r\n* **type:** El tipo de link, para este caso **image/{extension de imagen}** \r\n* **href** La ruta donde se encuentra el icono"
+    },
+    {
+      "file": "portafolio_web%5Cindex.html",
+      "line": 4,
+      "description": "# Metadatos\r\n\r\nEsto le da propiedades y características a nuestra pagina web, en este caso se quiere proporcionar características de idioma español para que reciba caracteres como tildes o la letra ñ esto gracias a **charset=UTF-8**"
+    }
+  ]
+}

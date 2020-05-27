@@ -1,0 +1,30 @@
+{
+  "title": "CSS Tutorial",
+  "steps": [
+    {
+      "file": "portafolio_web\\styles\\styles.css",
+      "line": 81,
+      "description": "# BackGround imagen y Color \r\n\r\nA Continuacuon se rescribe como se realiza la combinación de **Background** de imagen y de texto para crear por ejemplo un Banner:\r\n```javascript\r\n.banner{\r\n    color: #fff;\r\n    //Color de fondo\r\n    background-color: #333;\r\n    //Imagen de fondo\r\n    bakcground-image: url('./resources/img/banner.jpg');\r\n    //Tamaño de background\r\n    background-size: 500px 300px;\r\n    //Propiedad para que no se repita\r\n    background-repeat: no-repeat;\r\n    //Propiedad para ubicar la imagen en la parte derecha\r\n    background-position-x: right;\r\n}\r\n```"
+    },
+    {
+      "file": "portafolio_web%5Cstyles%5Cstyles.css",
+      "line": 88,
+      "description": "# Tamaño fijo de caja\r\n\r\nUtilizando la propiedad:\r\n```javascript\r\n{\r\n    box-sizing: border-box;\r\n}\r\n```\r\nNos aseguramos que el tamaño de un elemento sea exactamente el que nosotros le indicamos con las propiedades:\r\n* **width**\r\n* **height**\r\n\r\nSi el elemento tiene un **Border o un Paddin** CSS se encargara de reestructurar el tamaño interno del tamaño para que la suma de sus elementos sea el width o el height indicado.\r\n\r\n***Nota:** Recordar que el tamaño de un elemento es la suma del **Tamaño padding y border** para tener esto en cuenta*",
+      "selection": {
+        "start": {
+          "line": 87,
+          "character": 5
+        },
+        "end": {
+          "line": 87,
+          "character": 10
+        }
+      }
+    },
+    {
+      "file": "portafolio_web%5Cstyles%5Cstyles.css",
+      "line": 167,
+      "description": "# Display Flex \r\n\r\nEste Display alinea elementos de forma horizontal y de forma dinamica, este display se coloca en el contenedor padre pero este afecta los hijos, poniendolos de forma horizontal. Existen varias configuraciones que son importantes:\r\n\r\n## flex-direction: Direccion de alineacion\r\n\r\nPor defecto un flex-box alinea los elementos en columnas (horizontalmente) pero se puede cambiar esp para alinearlos con filas (verticalmente), Esto tambien cambia algunas propiedades por ejemplo el justify-content ahora alineara de forma certical y el aling-items de forma horizontal.\r\n\r\n```javascript\r\npadre{\r\n    flex-direction:row;\r\n    flex-direction:column;\r\n}\r\n```\r\n## flex-wrap: Posición vertical para no pasar el ancho\r\n\r\nEsta propiedad se debe colocar en el padre y por defecto esta en **nowrap**, esto implica que si hay muchos elementos o hay elementos muy anchos estos se van a posicionar horizontal y van a activar el scroll horizontal de la pagina web. Si lo colocamos como **wrap** estos se van a posicionar de tal forma que si ocupan todo el espacio de la pagina se posicionaran adentro.\r\n```javascript\r\npadre{\r\n    flex-wrap: nowrap;\r\n    flex-wrap: wrap;\r\n}\r\n```\r\n\r\n## flex-shrink: Modelo de caja intacto\r\n\r\nEsta configuración se debe colocar en los hijos y por defecto esta en **1**, esto implica que si hay muchos objetos o hay objetos muy anchos estos van a modificar su ancho de tal forma que no van a pasar el ancho de la pagina, si lo cambiamos a **0** estos van a mantener su modelo de caja y no cambiaran bajo ninguna circustancia.\r\n\r\n```javascript\r\nhijo{\r\n    flex-shrink: 1;\r\n    flex-shrink: 0;\r\n}\r\n```\r\n\r\n## justify-content: Alineamiento horizontal\r\nEsta configuración se coloca en el padre y alinea horizontalmente bajo ciertos criterios.\r\n### Alineamiento por posicionamiento\r\n```javascript\r\npadre{\r\n    justify-content: flex-start;\r\n    justify-content: center;\r\n    justify-content: flex-end;\r\n}\r\n```\r\n* **flex-start:** Posiciona los elementos en la parte izquierda del contenedor.\r\n* **center:** Posiciona los elementos en la parte central del contenedor.\r\n* **flex-end:** Posiciona los elementos en la parte derecha del contenedor.\r\n\r\n### Alineamiento por espaciado\r\n```javascript\r\npadre{\r\n    justify-content: space-between;\r\n    justify-content: space-evenly;\r\n    justify-content: space-around;\r\n}\r\n```\r\n* **space-between:** Posiciona los elementos con un espaciado uniforme entre los elementos, pero sin espacio en las esquinas (izquierda, derecha).\r\n* **space-evenly:** Posiciona los elementos con un espaciado uniforme entre los elementos y también las esquinas (izquierda, derecha).\r\n* **space-around:** Posiciona los elementos con un espaciado uniforme entre los elementos, pero el espacio en las esquinas sera la mitad del espaciado entre elementos (izquierda, derecha).\r\n\r\n## align-items: Alineamiento vertical\r\nEsta configuración se coloca en el padre y alinea verticalmente bajo ciertos criterios.\r\n### Alineamiento por posicionamiento\r\n```javascript\r\npadre{\r\n    align-items: flex-start;\r\n    align-items: center;\r\n    align-items: flex-end;\r\n}\r\n```\r\n* **flex-start:** Posiciona los elementos en la parte superior del contenedor.\r\n* **center:** Posiciona los elementos en la parte central del contenedor.\r\n* **flex-end:** Posiciona los elementos en la parte inferior del contenedor.\r\n\r\n### Otros Alineamientos verticales\r\n```javascript\r\npadre{\r\n    align-items: stretch;\r\n    align-items: baseline;\r\n}\r\n```\r\n* **stretch:** Hace que todos los elementos dentro del contenedor ocupen todo el alto del contenedor.\r\n* **baseline:** Alinea de una forma central a elementos dentro del contenedor que tienen diferentes altos.\r\n\r\n## align-self: Alineado vertical para un hijo en particular\r\n\r\nEsta configuracion va en cualquiera de los hijos y alinea verticalmente unicamente a ese hijo.\r\n\r\n```javascript\r\nhijo{\r\n    align-self: flex-start;\r\n    align-self: center;\r\n    align-self: flex-end;\r\n}\r\n```"
+    }
+  ]
+}

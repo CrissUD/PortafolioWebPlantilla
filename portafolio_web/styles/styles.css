@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* Reglas
+Selectores
+Declaraciones
+Propiedades 
+Valores */
+
+/* Selector de etiqueta */
+body{
+    margin: 0;
+    background: #F8F8F8;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #656972;
+}
+
+a{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Selector descendente */
+body header div nav ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 12px;
+}
+
+body header div nav ul li a:hover{
+    color: #ffffff;
+}
+
+/* Selector de clase */
+.nav-option{
+    list-style-type: none;
+}
+
+/* Selector de id */
+#portafolio, #experiencia, #referencias, #contacto{
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* ----------------------CONFIGURACIONES HEADER---------------------- */
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+}
+
+header h1{
+    font-weight: bold;
+}
+
+.menu{
+    margin: 0 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+/* ----------------------CONFIGURACIONES BANNER---------------------- */
+.banner{
+    position: relative;
+    max-height: 658px;
+    overflow: hidden;
+}
+
+.hero-img{
+    width: 100%;
+    /* box-sizing: border-box; */
+}
+
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 658px;
+    top: 0px;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), 35%,rgba(0,0,0,0.0));
+}
+
+.cover div{
+    position: relative;
+    margin-top: 170px;
+    margin-left: 100px;
+    color: #ffffff;
+}
+.cover div p{
+    color: #ffffff;
+}
+
+.cover div h1{
+    font-size: 34px;
+    /* Espacio entre lineas */
+    line-height: 48px;  
+        /* Espacio entre letras */
+    /* letter-spacing: 2px; */
+        /* Transformación de Texto */
+    /* text-transform: uppercase; */
+        /* Decoración de Texto */
+    /* text-decoration: line-through; */
+}
+
+.cover div h1 strong{
+    background: #159BC0;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+}
+
+.cover button, .form-button{
+    background: #159BC0;
+    color: #ffffff;
+    width: 22%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cover button:hover, .form-button:hover{
+    background: rgb(41, 183, 223);
+}
+
+/* ----------------------CONFIGURACIONES PORTAFOLIO---------------------- */
+
+.portfolio-title, .experience-title, .references-title{
+    color: #35373C;
+}
+
+.portfolio-description{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.portfolio-description span{
+    color: #159BC0;
+}
+
+.project{
+    margin: 50px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 2px rgba(173,173,173,1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-details{
+    /* display: inline-block;*/
+    padding: 40px;
+    vertical-align: top;
+    text-align: left;
+    width: 38%;
+    flex-shrink: 0;
+}
+
+.project-img-wrapper{
+    margin-bottom: -4px;
+    width: 55%; 
+    flex-shrink: 0;
+    align-self: flex-end;
+    /*display: inline-block;
+    vertical-align: bottom;*/
+}
+
+.project-img{
+    width: 95%;
+}
+
+.project-title, .event-title, .form-title{
+    color: #159BC0;
+    font-size: 28px;
+}
+
+.project-details a,
+.event-details a{
+    border: solid 2px #159BC0;
+    color: #159BC0;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 15px;
+    margin: 20px;
+    display: block;
+    width: 160px;
+    text-align: center;
+}
+
+.project-details a:hover,
+.event-details a:hover{
+    background: #159BC0;
+    color: #fff;
+}
+
+.project-description{
+    text-align: justify;
+    justify-content: inherit;
+}
+
+/* ----------------------CONFIGURACIONES TECNOLOGÍAS---------------------- */
+#tecnologias{
+    padding: 30px;
+    text-align: center;
+}
+
+.div-tech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-tech div{
+    width: 350px;
+}
+
+.tech-img{
+    width: 25%;
+}
+
+.tech-title{
+    font-weight: bold;
+}
+
+.tech-description{
+    color: #fff;
+}
+
+/* ----------------------CONFIGURACIONES EXPERIENCIA---------------------- */
+
+#experiencia div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.event{
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 18px 2px rgba(173,173,173,1);
+    width: 500px;
+    background: #F8F8F8;
+}
+
+.event-img-wrapper, .person-img-wrapper{
+    margin: 0;
+}
+
+.event-img{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.event-details{
+    position: relative;
+    margin: 40px;
+    margin-top: -40px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.event-details a{
+    margin: 5px;
+}
+
+/* ----------------------CONFIGURACIONES REFERENCIAS---------------------- */
+
+.div-references{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-person{
+    width: 400px;
+    position: relative;
+    margin: 40px;
+}
+
+.person-img{
+    width: 100%;
+}
+
+.person-cover{
+    background: linear-gradient(to top, rgba(0,0,0,0.7), 35%,rgba(0,0,0,0.0));
+    position: absolute;
+    top: 0;
+    height: 99%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.person-cover:hover{
+    opacity: 1;
+}
+
+.person-cover p{
+    margin: 30px;
+    margin-top: 320px;
+    color: #F8F8F8;
+    vertical-align: bottom;
+}
+
+/* ----------------------CONFIGURACIONES CONTACTO---------------------- */
+
+#contacto{
+    background: #159BC0;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.contact-tittle{
+    margin-bottom: 60px;
+}
+
+.form-email{
+    background: #fff;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 14px;
+    padding: 40px;
+    color:#999CA4;
+}
+
+.type-input{
+    height: 27px;
+    border: solid 1px #ccc;
+    color: #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 40%;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+.email{
+    width: 88%;
+    text-align: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+}
+
+.check{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.form-email p{
+    font-size: 14px;
+    color:#999CA4;
+}
+
+.slogan{
+    margin: 30px auto;
+}
+
+.form-email span{
+    color: #159BC0;
+    cursor: pointer;
+}
+
+/* ----------------------CONFIGURACIONES FOOTER---------------------- */
+.footer{
+    background: #35373C;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-footer{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-footer h4{
+    margin-left: -50px;
+    margin-bottom: 0;
+}
+
+.footer div div ul{
+    padding: 0;
+}
+
+.footer div div h4{
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer div div ul li{
+    margin: 10px 0;
+}
+
+.footer div div ul li a{
+    color: #BAC3BC;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer div div ul li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+hr{
+    margin: 20px 60px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.redes figure{
+    background: #303136;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.redes figure img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer p{
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .cover div{
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+    .cover div h1{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 35px;  
+    }
+    .menu{
+        display: none;
+    }
+    .project{
+        margin: 50px 15px;
+    }
+    .form-email{
+        width: 80%;
+    }
+    .names {
+        width: 88%;
+    }
+    .form-button{
+        width: 50%;
+    }
+    .project-details{
+        width: 80%;
+    }
+    .project-img-wrapper{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1256px) {
+    .project-img-wrapper{
+        width: 50%;
+    }
+}
